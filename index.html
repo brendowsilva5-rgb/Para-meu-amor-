@@ -13,19 +13,27 @@
       text-align: center;
     }
     header {
-      padding: 80px 20px;
+      padding: 60px 20px;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.2rem;
     }
+    .foto {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
     section {
       background: #fff;
       margin: 20px;
-      padding: 40px 20px;
+      padding: 35px 20px;
       border-radius: 20px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
@@ -35,17 +43,18 @@
       color: #ee6c7d;
     }
     .card {
-      margin: 15px auto;
-      max-width: 500px;
+      margin: 12px auto;
+      max-width: 520px;
       background: #f9f9f9;
-      padding: 20px;
+      padding: 18px;
       border-radius: 15px;
+      font-size: 1.05rem;
     }
     button {
       background: #ee6c7d;
       border: none;
       color: #fff;
-      padding: 15px 25px;
+      padding: 14px 26px;
       border-radius: 30px;
       font-size: 1rem;
       cursor: pointer;
@@ -55,7 +64,7 @@
       background: #d95566;
     }
     footer {
-      padding: 40px 20px;
+      padding: 35px 20px;
       font-size: 0.9rem;
     }
   </style>
@@ -64,36 +73,48 @@
 
   <header>
     <h1>Oi, meu amor ❤️</h1>
-    <p>Eu fiz esse cantinho só pra você</p>
+    <p>Desde que você chegou, tudo ganhou mais sentido</p>
+    <!-- TROQUE 'foto.jpg' pelo nome da foto -->
+    <img src="foto1.jpg" alt="Nossa foto" class="foto" />
   </header>
 
   <section>
-    <h2>Por que você é especial</h2>
-    <div class="card">Seu sorriso muda meu dia inteiro</div>
-    <div class="card">Você me faz querer ser melhor</div>
-    <div class="card">Com você, tudo fica mais leve</div>
+    <h2>Por que eu me apaixonei por você</h2>
+    <div class="card">Porque seu sorriso é o meu lugar seguro.</div>
+    <div class="card">Porque com você, até o silêncio é confortável.</div>
+    <div class="card">Porque você me faz acreditar em futuro.</div>
   </section>
 
   <section>
-    <h2>Nossa história</h2>
-    <p>Ainda estamos escrevendo, mas já é a minha favorita.</p>
+    <h2>Se eu pudesse resumir você</h2>
+    <p style="font-size:1.25rem; max-width:600px; margin:auto; font-style:italic;">“Entre todas as escolhas da minha vida, você é a que eu faria de novo, sem pensar duas vezes.”</p>
   </section>
 
   <section>
-    <h2>Mensagem secreta</h2>
+    <h2>Nossos momentos 📸</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
+      <img src="foto1.jpg" style="width:150px; height:150px; object-fit:cover; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.2);" />
+      <img src="foto2.jpg" style="width:150px; height:150px; object-fit:cover; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.2);" />
+      <img src="foto3.jpg" style="width:150px; height:150px; object-fit:cover; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.2);" />
+    </div>
+    <p style="margin-top:15px; font-size:0.95rem;">Cada foto guarda um pedacinho da nossa história ❤️</p>
+  </section>
+
+  <section>
+    <h2>Uma promessa pra você 💍</h2>
     <button onclick="mostrarMensagem()">Clique aqui</button>
-    <p id="mensagem" style="display:none; margin-top:20px; font-size:1.2rem;"></p>
+    <p id="mensagem" style="display:none; margin-top:20px; font-size:1.25rem; max-width:600px; margin-left:auto; margin-right:auto;"></p>
   </section>
 
   <footer>
-    Feito com carinho por alguém que te ama 💕
+    Feito com carinho por alguém que te ama muito Brendow 💕
   </footer>
 
   <script>
     function mostrarMensagem() {
       const msg = document.getElementById('mensagem');
       msg.style.display = 'block';
-      msg.innerText = 'Você é a melhor parte dos meus dias. Obrigado por existir ❤️';
+      msg.innerText = 'Prometo cuidar de você, te respeitar, te apoiar e estar ao seu lado — nos dias bons e principalmente nos difíceis. Você é meu amor ❤️';
     }
   </script>
 
