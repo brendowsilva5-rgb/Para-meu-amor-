@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pra Você ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      background: #fff;
+      margin: 20px;
+      padding: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ee6c7d;
+    }
+    .card {
+      margin: 15px auto;
+      max-width: 500px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    button {
+      background: #ee6c7d;
+      border: none;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #d95566;
+    }
+    footer {
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oi, meu amor ❤️</h1>
+    <p>Eu fiz esse cantinho só pra você</p>
+  </header>
+
+  <section>
+    <h2>Por que você é especial</h2>
+    <div class="card">Seu sorriso muda meu dia inteiro</div>
+    <div class="card">Você me faz querer ser melhor</div>
+    <div class="card">Com você, tudo fica mais leve</div>
+  </section>
+
+  <section>
+    <h2>Nossa história</h2>
+    <p>Ainda estamos escrevendo, mas já é a minha favorita.</p>
+  </section>
+
+  <section>
+    <h2>Mensagem secreta</h2>
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+    <p id="mensagem" style="display:none; margin-top:20px; font-size:1.2rem;"></p>
+  </section>
+
+  <footer>
+    Feito com carinho por alguém que te ama 💕
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById('mensagem');
+      msg.style.display = 'block';
+      msg.innerText = 'Você é a melhor parte dos meus dias. Obrigado por existir ❤️';
+    }
+  </script>
+
+</body>
+</html>
